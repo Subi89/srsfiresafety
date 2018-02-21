@@ -1,11 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
 # See https://help.github.com/ignore-files/ for more about ignoring files.
+debug.log
 
+.idea
 # dependencies
 /node_modules
-
+# dependencies
+/node_modules
 # testing
 /coverage
-
 # production
 /build
 
