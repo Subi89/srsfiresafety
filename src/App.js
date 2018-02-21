@@ -132,6 +132,44 @@ class App extends Component {
           <SideMenu items={items}/>	  
 		  
          </div>
+		 /***Portfolio Gallery Grid**/
+<div class="row">
+  <div class="column">
+    <div class="product-content">
+      <img src={require('./images/background.png')}  />
+      
+      <p>ABC STORED PRESSURE TYPE FIRE 40
+EXTINGUISHER</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="product-content">
+      <img src={require('./images/background.png')} />
+     
+       <p>ABC STORED PRESSURE TYPE FIRE 40
+EXTINGUISHER</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="product-content">
+      <img src={require('./images/background.png')}  />
+      
+       <p>ABC STORED PRESSURE TYPE FIRE 40
+EXTINGUISHER</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="product-content">
+      <img src={require('./images/background.png')}  />
+      
+       <p>ABC STORED PRESSURE TYPE FIRE 40
+EXTINGUISHER</p>
+    </div>
+  </div>
+</div>
+
+
+
 		 </div>
         
 		

@@ -1,4 +1,4 @@
-.App {
+App {
   text-align: center;
 }
 
@@ -398,11 +398,53 @@ body {
 
 
 
+/********************
+Text-image component
+*********************/
 
 
+.row {
+    margin: 8px -16px;
+}
 
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
 
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
 
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.product-content {
+    background-color: black;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 
 
 
@@ -416,7 +458,6 @@ body {
 	COLOURS
 ********************************************/
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-	autoSlide: 2000;
   -webkit-transition: all 0.25s ease-in;
   -moz-transition: all 0.25s ease-in;
   -ms-transition: all 0.25s ease-in;
@@ -642,7 +683,8 @@ body {
     color: #fff; }
   .carousel:hover .slide .legend {
     opacity: 1; }
-
-.content-carousel {
+	
+	/* Added Carousel Positioning Style to the default CSS*/
+	.content-carousel {
 	margin-top:8%;
 }
