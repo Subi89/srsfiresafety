@@ -8,7 +8,8 @@
     "react-responsive-carousel": "^3.1.33",
     "react-scripts": "1.1.1",
     "react-sidemenu": "^0.0.13",
-    "reactjs-carousel": "^1.16.1"
+    "reactjs-carousel": "^1.16.1",
+    "react-map-components": "^1.0.12"
   },
   "scripts": {
     "start": "react-scripts start",

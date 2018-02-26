@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import {SideMenu} from 'react-sidemenu';
 import sidemenuStyles from '../../node_modules/react-sidemenu/dist/react-sidemenu.min.css';
 
+const style = {
+    background: '#525441',
+    display: 'inline-block',
+    width: '30vw',
+    margin: '0 0 1vh 0',
+    height: 'auto',
+    borderRadius: '28px',
+    position: 'absolute',
+    overflow: 'auto',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center'
+};
 
 const items = [
     {divider: true, label: 'Our Products', value: 'main-nav'},
@@ -95,9 +107,11 @@ const items = [
 class sidemenu extends Component {
     render() {
         return(
-        <div className={"sidemenuStyles.Side-menu"}>
-            <SideMenu items={items}/>
-        </div>
+            <div style={style}>
+                <div className={"sidemenuStyles.Side-menu"}>
+                    <SideMenu items={items}/>
+                </div>
+            </div>
         );
     }
 }

@@ -3,7 +3,7 @@ import './App.css';
 
 import Sidemenu from './components/sidemenu';
 import Carousel from './components/carousel';
-
+import DisplayItemList from './components/displayItemList';
 
 class App extends Component {
   render() {
@@ -13,32 +13,7 @@ class App extends Component {
              <div className="content">
                 <Carousel />
                 <Sidemenu />
-                <div className="row">
-                  <div className="column">
-                    <div className="product-content">
-                      <img src={require('./images/background.png')}  />
-                      <p>ABC STORED PRESSURE TYPE FIRE 40 EXTINGUISHER</p>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="product-content">
-                      <img src={require('./images/background.png')} />
-                       <p>ABC STORED PRESSURE TYPE FIRE 40 EXTINGUISHER</p>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="product-content">
-                      <img src={require('./images/background.png')}  />
-                       <p>ABC STORED PRESSURE TYPE FIRE 40 EXTINGUISHER</p>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="product-content">
-                      <img src={require('./images/background.png')}  />
-                       <p>ABC STORED PRESSURE TYPE FIRE 40 EXTINGUISHER</p>
-                    </div>
-                  </div>
-                </div>
+                <DisplayItemList />
              </div>
         </div>
       </div>
