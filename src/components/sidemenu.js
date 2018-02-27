@@ -3,12 +3,12 @@ import {SideMenu} from 'react-sidemenu';
 import sidemenuStyles from '../../node_modules/react-sidemenu/dist/react-sidemenu.min.css';
 
 const style = {
-    background: '#525441',
+    background: 'black',
     display: 'inline-block',
-    width: '30vw',
+    maxWidth: '300px',
     margin: '0 0 1vh 0',
     height: 'auto',
-    borderRadius: '28px',
+    borderRadius: '15px',
     position: 'absolute',
     overflow: 'auto',
     backgroundRepeat: 'no-repeat',
@@ -46,7 +46,7 @@ const items = [
             {label: 'Stand Alone Fire Alarm System', value: 'standAloneFireAlarmSystem'}
         ]
     },
-    {label: 'Escape Signs And Directional Lighting System', value: 'escapeSignsAndDirectionalLightingSystem', icon: 'fa-automobile',
+    {label: 'Escape Signs And Lighting System', value: 'escapeSignsAndLightingSystem', icon: 'fa-automobile',
         children: [
             {label: 'Photo Luminescent Sign Boards', value: 'conventionalFireAlarmSystem'},
             {label: 'LED Sign Boards', value: 'ledSignBoards'},

@@ -7,8 +7,8 @@ const itemList = [{"title": "First Fire Extinguisher"}, {"title": "Second Fire E
 const style = {
     background: '#222d32',
     display: 'inline-block',
-    width: '65vw',
-    margin: '0 0 1vh 30vw',
+    width: 'calc(100% - 330px)',
+    margin: '0 0 1vh 310px',
     height: '49vh',
     borderRadius: '5px',
     position: 'absolute',
