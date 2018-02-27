@@ -54,14 +54,6 @@ const items = [
             {label: 'Emergency Exit Lights', value: 'emergencyExitLights'}
         ]
     },
-    {label: 'Safety Suits', value: 'escapeSignsAndDirectionalLightingSystem', icon: 'fa-automobile',
-        children: [
-            {label: 'Photo Luminescent Sign Boards', value: 'conventionalFireAlarmSystem'},
-            {label: 'LED Sign Boards', value: 'ledSignBoards'},
-            {label: 'Normal Sign Boards', value: 'normalSignBoards'},
-            {label: 'Emergency Exit Lights', value: 'emergencyExitLights'}
-        ]
-    },
     {label: 'Personal Protective Equipments', value: 'safetySuits', icon: 'fa-automobile',
         children: [
             {label: 'Photo Luminescent Sign Boards', value: 'conventionalFireAlarmSystem'},
@@ -101,7 +93,17 @@ const items = [
             {label: 'Kitchen Suppression System', value: 'kitchenSuppressionSystem'},
             {label: 'Water Mist Suppression System', value: 'waterMistSuppressionSystem'}
         ]
-    }
+    },
+    {divider: true, label: 'Our Services', value: 'other'},
+    {label: 'Fire safety Consultant', value: 'fireSafetyConsultant', icon: 'fa-beer'},
+    {label: 'Fire NOC Approval', value: 'fireNocApproval', icon: 'fa-beer'},
+    {label: 'Fire License Approval', value: 'fireLicenseApproval', icon: 'fa-beer'},
+    {label: 'Fire Hydrant Drawing', value: 'fireHydrantDrawing', icon: 'fa-beer'},
+    {label: 'Fire Training Certification', value: 'fireTrainingCertification', icon: 'fa-beer'},
+    {label: 'Live Fire Extinguisher Demo', value: 'liveFireExtinguisherDemo', icon: 'fa-beer'},
+    {divider: true, label: 'Other', value: 'other'},
+    {label: 'About Us', value: 'aboutUs', icon: 'fa-beer'},
+    {label: 'Contact Us', value: 'contactUs', icon: 'fa-beer'}
 ];
 
 class sidemenu extends Component {
