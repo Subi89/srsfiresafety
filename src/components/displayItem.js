@@ -4,7 +4,7 @@ const style = {
     background: 'black',
     display: 'inline-block',
     width: '200px',
-    margin: '20px',
+    margin: '13px',
     padding: '5px',
     height: '150px',
     borderRadius: '10px',

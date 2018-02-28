@@ -93,20 +93,10 @@ const items = [
             {label: 'Kitchen Suppression System', value: 'kitchenSuppressionSystem'},
             {label: 'Water Mist Suppression System', value: 'waterMistSuppressionSystem'}
         ]
-    },
-    {divider: true, label: 'Our Services', value: 'other'},
-    {label: 'Fire safety Consultant', value: 'fireSafetyConsultant', icon: 'fa-beer'},
-    {label: 'Fire NOC Approval', value: 'fireNocApproval', icon: 'fa-beer'},
-    {label: 'Fire License Approval', value: 'fireLicenseApproval', icon: 'fa-beer'},
-    {label: 'Fire Hydrant Drawing', value: 'fireHydrantDrawing', icon: 'fa-beer'},
-    {label: 'Fire Training Certification', value: 'fireTrainingCertification', icon: 'fa-beer'},
-    {label: 'Live Fire Extinguisher Demo', value: 'liveFireExtinguisherDemo', icon: 'fa-beer'},
-    {divider: true, label: 'Other', value: 'other'},
-    {label: 'About Us', value: 'aboutUs', icon: 'fa-beer'},
-    {label: 'Contact Us', value: 'contactUs', icon: 'fa-beer'}
+    }
 ];
 
-class sidemenu extends Component {
+class sidemenuLeft extends Component {
     render() {
         return(
             <div style={style}>
@@ -118,4 +108,4 @@ class sidemenu extends Component {
     }
 }
 
-export default sidemenu;
+export default sidemenuLeft;

@@ -5,10 +5,10 @@ import DisplayItem from './displayItem';
 const itemList = [{"title": "First Fire Extinguisher"}, {"title": "Second Fire Extinguisher"}, {"title": "Third Fire Extinguisher"}];
 
 const style = {
-//    background: '#222d32',
-    background: '#222D32',
+    background: '#222d32',
+//    background: '#E7AD36',
     display: 'inline-block',
-    width: 'calc(100% - 330px)',
+    width: 'calc(100% - 560px)',
     margin: '0 0 1vh 310px',
     minHeight: '49vh',
     borderRadius: '15px',
