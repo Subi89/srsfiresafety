@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {SideMenu} from 'react-sidemenu';
-import sidemenuStyles from '../../node_modules/react-sidemenu/dist/react-sidemenu.min.css';
 
 const style = {
     background: 'black',
@@ -29,8 +28,8 @@ class sidemenuRight extends Component {
     render() {
         return(
             <div style={style}>
-                <div className={"sidemenuStyles.Side-menu"} rtl={true}>
-                    <SideMenu items={items}/>
+                <div>
+                    <SideMenu items={items} rtl={true}/>
                 </div>
             </div>
         );

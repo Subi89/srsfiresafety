@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import {SideMenu} from 'react-sidemenu';
-import sidemenuStyles from '../../node_modules/react-sidemenu/dist/react-sidemenu.min.css';
+import sideMenuStyles from '../../node_modules/react-sidemenu/dist/react-sidemenu.css';
 
 const style = {
-    background: 'black',
+//    background: 'black',
     display: 'inline-block',
     maxWidth: '300px',
-    margin: '0 0 1vh 0',
-    height: 'auto',
     borderRadius: '15px',
     position: 'absolute',
-    overflow: 'auto',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center'
+    overflow: 'auto'
 };
 
 const items = [
@@ -96,16 +92,14 @@ const items = [
     }
 ];
 
-class sidemenuLeft extends Component {
+class sideMenuLeft extends Component {
     render() {
         return(
             <div style={style}>
-                <div className={"sidemenuStyles.Side-menu"}>
-                    <SideMenu items={items}/>
-                </div>
+                    <SideMenu items={items} shouldTriggerClickOnParents={true}/>
             </div>
         );
     }
 }
 
-export default sidemenuLeft;
+export default sideMenuLeft;

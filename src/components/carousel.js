@@ -7,7 +7,7 @@ class carousel extends Component {
     render(){
         return(
             <div class={carouselStyles.carousel}>
-                <Carousel autoPlay={true} infiniteLoop={true}>
+                <Carousel autoPlay={true} infiniteLoop={true} transitionTime={1000}>
                     <div>
                         <img src={require('../images/1.jpg')} alt={""} />
                         <p className="legend">Legend 1</p>

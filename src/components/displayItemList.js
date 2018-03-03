@@ -12,7 +12,7 @@ const style = {
     margin: '0 0 1vh 310px',
     minHeight: '49vh',
     borderRadius: '15px',
-    position: 'absolute',
+    position: 'relative',
     overflow: 'auto',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center'
