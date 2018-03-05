@@ -9,10 +9,11 @@ const style = {
 //    background: '#E7AD36',
     display: 'inline-block',
     width: 'calc(100% - 560px)',
-    margin: '0 0 1vh 310px',
+    margin: '0 0 0 10px',
     minHeight: '49vh',
     borderRadius: '15px',
     position: 'relative',
+    verticalAlign: 'top',
     overflow: 'auto',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center'

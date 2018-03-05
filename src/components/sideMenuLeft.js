@@ -7,7 +7,7 @@ const style = {
     display: 'inline-block',
     maxWidth: '300px',
     borderRadius: '15px',
-    position: 'absolute',
+    position: 'relative',
     overflow: 'auto'
 };
 
