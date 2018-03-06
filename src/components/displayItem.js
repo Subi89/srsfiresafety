@@ -3,24 +3,13 @@ import React, { Component } from 'react';
 const style = {
     background: 'black',
     display: 'inline-block',
-    width: '200px',
-    margin: '13px',
-    padding: '5px',
-    height: '150px',
-    borderRadius: '10px',
-    boxShadow: '0 4px 8px 0 #002B36, 0 6px 20px 0 #002B36',
+    // width: '64vw',
+    margin: '40px',
+    // height: '49vh',
+    borderRadius: '28px',
     position: 'relative',
     overflow: 'auto'
 };
-
-const imageStyle = {
-   maxWidth: '100%',
-   maxHeight: '100%'
-};
-
-const captionStyle = {
-    textAlign: 'center'
-}
 
 class displayItem extends Component {
 
@@ -37,8 +26,8 @@ class displayItem extends Component {
         let { title } = this.props;
         return(
                 <div style={style}>
-                    <img src={require('../images/background.png')} alt={""}  style={imageStyle} />
-                    <p style={captionStyle}>{title}</p>
+                    <img src={require('../images/background.png')} alt={""}  />
+                    <p>{title}</p>
                 </div>
         );
     }
