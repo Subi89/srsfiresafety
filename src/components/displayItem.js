@@ -62,7 +62,7 @@ class displayItem extends Component {
         return(
                 <div style={style}>
                     <div style={imageStyle}>
-                        <img src={require('../images/FireExtinguishers/Backup trolley mount fire extinguisher.png')} style={imageStyle} alt={""}  />
+                        <img src={require('../images/Transp/Backup trolley mount fire extinguisher.png')} style={imageStyle} alt={""}  />
                     </div>
 					<div className="example">
                         <p style={captionStyle}>
