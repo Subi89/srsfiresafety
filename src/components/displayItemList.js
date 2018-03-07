@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import MapComponents from 'react-map-components';
 import DisplayItem from './displayItem';
 
-const itemList = [{"title": "First Fire Extinguisher"}, {"title": "Second Fire Extinguisher"}, {"title": "Third Fire Extinguisher"}];
+const itemList = [
+    {"image": "../images/Transp/Automatic fire extinguisher.png"},
+    {"image": "../images/Transp/Backup trolley mount fire extinguisher.png"},
+    {"image": "../images/FireExtinguishers/Automatic fire extinguisher.png"}];
 
 const style = {
     background: '#222d32',

@@ -9,28 +9,16 @@ class carousel extends Component {
             <div class={carouselStyles.carousel}>
                 <Carousel autoPlay={true} infiniteLoop={true} transitionTime={1000}>
                     <div>
-                        <img src={require('../images/1.jpg')} alt={""} />
+                        <img src={require('../images/b1.png')} alt={""} />
                         <p className="legend">Legend 1</p>
                     </div>
                     <div>
-                        <img src={require('../images/2.jpg')} alt={""} />
+                        <img src={require('../images/b001.png')} alt={""} />
                         <p className="legend">Legend 2</p>
                     </div>
                     <div>
-                        <img src={require('../images/1.jpg')} alt={""} />
+                        <img src={require('../images/b0001.png')} alt={""} />
                         <p className="legend">Legend 3</p>
-                    </div>
-                    <div>
-                        <img src={require('../images/2.jpg')} alt={""} />
-                        <p className="legend">Legend 4</p>
-                    </div>
-                    <div>
-                        <img src={require('../images/1.jpg')} alt={""} />
-                        <p className="legend">Legend 5</p>
-                    </div>
-                    <div>
-                        <img src={require('../images/2.jpg')} alt={""} />
-                        <p className="legend">Legend 6</p>
                     </div>
                 </Carousel>
             </div>

@@ -58,14 +58,6 @@ const items = [
             {label: 'Emergency Exit Lights', value: 'emergencyExitLights'}
         ]
     },
-    {label: 'Suppression Systems', value: 'escapeSignsAndDirectionalLightingSystem', icon: 'fa-automobile',
-        children: [
-            {label: 'Photo Luminescent Sign Boards', value: 'conventionalFireAlarmSystem'},
-            {label: 'LED Sign Boards', value: 'ledSignBoards'},
-            {label: 'Normal Sign Boards', value: 'normalSignBoards'},
-            {label: 'Emergency Exit Lights', value: 'emergencyExitLights'}
-        ]
-    },
     {label: 'Safety Suits', value: 'safetySuits', icon: 'fa-automobile',
         children: [
             {label: 'Boiler Suits', value: 'boilerSuits'},
