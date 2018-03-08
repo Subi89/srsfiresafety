@@ -23,7 +23,7 @@ const items = [
             {label: 'Water Mist Fire Extinguishers', value: 'waterMistFireExtinguishers'},
             {label: 'Backup Trolley Mount Fire Extinguishers', value: 'backupTrolleyFireExtinguishers'},
             {label: 'Automatic Fire Extinguishers', value: 'automaticFireExtinguishers'},
-            {label: 'MRI Safe Fire Extinguishers', value: 'mriSafeFireExtinguishers'},
+            {label: 'MRI Safe Fire Extinguishers', value: 'mriSafeFireExtinguishers'}
         ]
     },
     {label: 'Fire Hydrant System', value: 'fireHydrantSystem', icon: 'fa-automobile',
@@ -51,14 +51,6 @@ const items = [
             {label: 'Normal Sign Boards', value: 'normalSignBoards'},
             {label: 'Emergency Exit Lights', value: 'emergencyExitLights'},
             {label: 'Fire Proof Door with Emergency light', value: 'fireProofDoorWithEmergencyLight'}
-        ]
-    },
-    {label: 'Personal Protective Equipments', value: 'safetySuits', icon: 'fa-automobile',
-        children: [
-            {label: 'Photo Luminescent Sign Boards', value: 'conventionalFireAlarmSystem'},
-            {label: 'LED Sign Boards', value: 'ledSignBoards'},
-            {label: 'Normal Sign Boards', value: 'normalSignBoards'},
-            {label: 'Emergency Exit Lights', value: 'emergencyExitLights'}
         ]
     },
     {label: 'Safety Suits', value: 'safetySuits', icon: 'fa-automobile',
