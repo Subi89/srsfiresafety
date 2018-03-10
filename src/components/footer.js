@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import Info from './info';
+import GoogleMap from './googleMap';
 
 const footerStyle = {
-    width: '100%',
-    display: 'block',
-    margin: 'auto',
-    position: 'absolute'
-
+    margin: '10px',
+    padding: '20px',
+    width: '98%',
+    display: 'inline-block',
+    position: 'relative',
+    borderRadius: '15px',
+    height: '400px',
+    background: '#222D32',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
 }
 
 class footer extends Component {
@@ -14,6 +21,7 @@ class footer extends Component {
       return(
       <div style={footerStyle}>
         <Info />
+        <GoogleMap />
       </div>
        );
     }

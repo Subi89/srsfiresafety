@@ -9,8 +9,9 @@
     "react-responsive-carousel": "^3.1.33",
     "react-responsive-modal": "^2.0.1",
     "react-scripts": "1.1.1",
-    "react-sidemenu": "^0.0.13",
-    "reactjs-carousel": "^1.16.1"
+    "react-sidemenu": "^0.0.14",
+    "reactjs-carousel": "^1.16.1",
+    "google-map-react": "^0.32.0"
   },
   "scripts": {
     "start": "react-scripts start",

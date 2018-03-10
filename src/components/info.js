@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
 
 const infoStyle = {
-    width: '100%',
+    width: '50%',
+    display: 'inline-block',
     clear: 'both',
-    textAlign: 'center'
+    textAlign: 'center',
+    verticalAlign: 'top',
+    right: '1vw',
+    height: '150px'
+}
+
+const linkStyle = {
+    color: 'white'
 }
 
 
 class info extends Component {
     render(){
       return(
-          <div style={infoStyle}>
-              <p>SRS ENTERPRISES</p>
-              <p>Kavundampalayam</p>
-              <p>Coimbatore-30</p>
-              <p>PH:9940799273:8695299273</p>
-              <p>Mail: srsenterprisescbe@gmail.com</p>
-              <a href="http://www.srsfiresafety.com">www.srsfiresafety.com</a>
-           </div>
+            <div style={infoStyle}>
+                <h2>SRS Enterprises</h2>
+                <p>70A/1, K.K.NAGAR,</p>
+                <p>Kavundampalayam</p>
+                <p>Coimbatore - 641030</p>
+                <p>Phone:  99407-99273  :   86952-99273</p>
+                <p>E-Mail: info@srsfiresafety.com</p>
+                <a style={linkStyle} href="http://www.srsfiresafety.com">www.srsfiresafety.com</a>
+            </div>
        );
     }
 }
