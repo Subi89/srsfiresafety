@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Modal from 'react-responsive-modal';
 import '../../node_modules/react-responsive-modal/lib/react-responsive-modal.css';
 
+
+
 const style = {
     background: 'white',
     display: 'inline-block',
@@ -68,7 +70,7 @@ class displayItem extends Component {
                         <p style={captionStyle}>
                     <button className="btn btn-action" style= {buttonStyle} onClick={this.onOpenModal}>
                       View More
-                    </button></p>
+                    </button>{' '}</p>
                     <Modal
                       open={open}
                       onClose={this.onCloseModal}
@@ -79,13 +81,53 @@ class displayItem extends Component {
                         transitionExit: 'transition-exit-active',
                         transitionExitActive: 'transition-exit-active',
                       }}
-                      animationDuration={1000}
+                      animationDuration={300} closeIconSize = {18}
                     >
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                    pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
-                    hendrerit risus, sed porttitor quam.
-                  </p>
+					
+					<table style={{color:'red'}}>
+						<tr>
+							<th colspan="2">Fire Extinguisher</th>
+						</tr>
+							<tr>
+								<td><img src={require('../images/Transp/Backup trolley mount fire extinguisher.png')}  /> </td>
+								<td><p style={{color:'red'}}>
+								Description:<br/><br/>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+									pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
+									hendrerit risus, sed porttitor quam.
+									</p>
+								</td>				  
+							</tr>
+							<tr>
+								<td></td>
+								<td style={{color:'red'}}><p>Options:</p>
+
+								<form class="boxed">
+									<input type="radio" id="one" name="weight" value="1KG"/>
+									<label for="one">1KG</label>
+					
+									<input type="radio" id="two" name="weight" value="2KG"/>
+									<label for="two">2KG</label>
+					
+									<input type="radio" id="three" name="weight" value="3KG"/>
+									<label for="three">3KG</label>
+					
+									<input type="radio" id="Four" name="weight" value="4KG"/>
+									<label for="four">4KG</label>
+					
+									<input type="radio" id="Five" name="weight" value="5KG"/>
+									<label for="five">5KG</label>					
+
+									<br/><br/>
+									
+									<button style= {buttonStyle} name="callBack"> Request CallBack</button>
+									<button style= {buttonStyle} name="enquiry"> Send Enquiry</button>
+						
+								</form>
+								</td>
+							</tr>
+					</table>				
+                  
                 </Modal>
             </div>
         </div>
