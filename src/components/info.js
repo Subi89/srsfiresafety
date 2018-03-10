@@ -18,14 +18,15 @@ const linkStyle = {
 class info extends Component {
     render(){
       return(
-          <div style={infoStyle}>
-              <h2>SRS Enterprises</h2>
-              <p>Kavundampalayam</p>
-              <p>Coimbatore - 641030</p>
-              <p>Phone:  99407-99273  :   86952-99273</p>
-              <p>E-Mail: info@srsfiresafety.com</p>
-              <a style={linkStyle} href="http://www.srsfiresafety.com">www.srsfiresafety.com</a>
-           </div>
+            <div style={infoStyle}>
+                <h2>SRS Enterprises</h2>
+                <p>70A/1, K.K.NAGAR,</p>
+                <p>Kavundampalayam</p>
+                <p>Coimbatore - 641030</p>
+                <p>Phone:  99407-99273  :   86952-99273</p>
+                <p>E-Mail: info@srsfiresafety.com</p>
+                <a style={linkStyle} href="http://www.srsfiresafety.com">www.srsfiresafety.com</a>
+            </div>
        );
     }
 }
