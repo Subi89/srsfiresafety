@@ -6,7 +6,6 @@ const footerStyle = {
     margin: '10px',
     padding: '20px',
     width: '98%',
-    display: 'inline-block',
     position: 'relative',
     borderRadius: '15px',
     height: '400px',

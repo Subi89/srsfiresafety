@@ -96,7 +96,7 @@ class displayItem extends Component {
                         <th colspan="2">Fire Extinguisher</th>
                     </tr>
                         <tr>
-                            <td><img src={require('../images/fireExtinguishers/backupTrolleyFireExtinguishers.png')}  /> </td>
+                            <td><img src={img_src}  alt=""/> </td>
                             <td><p style={{color:'red'}}>
                             Description:<br/><br/>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam

@@ -20,6 +20,7 @@ class googleMap extends Component {
        <GoogleMapReact
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
+        yesIWantToUseGoogleMapApiInternals={true}
         onGoogleApiLoaded={({map, maps}) => this.renderMarkers(map, maps)}
       >
       </GoogleMapReact>
@@ -33,6 +34,7 @@ class googleMap extends Component {
       map,
       title: 'SRS Enterprises'
     });
+    return marker;
   }
 }
 
