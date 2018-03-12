@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {SideMenu} from 'react-sidemenu';
 import sideMenuStyles from '../../node_modules/react-sidemenu/dist/react-sidemenu.css';
+import PubSub from 'pubsub-js';
 
 const style = {
 //    background: 'black',
@@ -80,10 +81,15 @@ const items = [
 ];
 
 class sideMenuLeft extends Component {
+
+    itemClicked = (value) =>{
+        PubSub.publish('sideMenu.left', {selection: value});
+    }
+
     render() {
         return(
             <div style={style}>
-                    <SideMenu items={items} shouldTriggerClickOnParents={true}/>
+                    <SideMenu items={items} shouldTriggerClickOnParents={true} onMenuItemClick={this.itemClicked}/>
             </div>
         );
     }

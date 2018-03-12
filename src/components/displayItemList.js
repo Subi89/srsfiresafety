@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MapComponents from 'react-map-components';
 import DisplayItem from './displayItem';
+import PubSub from 'pubsub-js';
 
 const attributeList = {
     "fireExtinguishers": [{"image": "./fireExtinguishers/automaticFireExtinguishers.png", "title": "Automatic Fire Extinguishers"},
@@ -36,11 +37,18 @@ const style = {
 class displayItemList extends Component {
     constructor(props) {
         super(props);
-        this.state = {itemList: attributeList.safetySuits};
+        this.state = {itemList: attributeList["fireExtinguishers"]};
+    }
+
+    sideMenuSelectionUpdate = (msg, data) => {
+//        console.log("Got something on the subscription : ", msg, data)
+        if(attributeList[data.selection])
+            this.setState({itemList: attributeList[data.selection]});
     }
 
     componentDidMount() {
-        this.setState({itemList: attributeList.safetySuits});
+        this.setState({itemList: attributeList["fireExtinguishers"]});
+        this.token = PubSub.subscribe('sideMenu', this.sideMenuSelectionUpdate);
     }
 
     render(){

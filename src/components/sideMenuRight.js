@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {SideMenu} from 'react-sidemenu';
+import PubSub from 'pubsub-js';
 
 const style = {
     background: 'black',
@@ -25,11 +26,16 @@ const items =    [{divider: true, label: 'Our Services', value: 'other'},
 
 
 class sidemenuRight extends Component {
+
+    itemClicked = (value) =>{
+        PubSub.publish('sideMenu.right', {selection: value});
+    }
+
     render() {
         return(
             <div style={style}>
                 <div>
-                    <SideMenu items={items} rtl={true}/>
+                    <SideMenu items={items} rtl={true} onMenuItemClick={this.itemClicked}/>
                 </div>
             </div>
         );
