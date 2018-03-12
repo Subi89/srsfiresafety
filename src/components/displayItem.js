@@ -10,7 +10,7 @@ const style = {
     width: '200px',
     margin: '13px',
     padding: '5px',
-    height: '230px',
+    height: '250px',
     borderRadius: '10px',
     boxShadow: '0 4px 8px 0 #002B36, 0 6px 20px 0 #002B36',
     position: 'relative',
@@ -36,7 +36,7 @@ const buttonStyle = {
 
 const imageStyle = {
    maxWidth: '100%',
-   maxHeight: '70%',
+   maxHeight: '80%',
     margin: 'auto',
     overflow: 'hidden'
 };
@@ -48,12 +48,11 @@ const captionStyle = {
     fontWeight: 'bold'
 };
 
-var images = require.context('../images', true);
+let images = require.context('../images', true);
 
 class displayItem extends Component {
     state = {
-    open: false,
-    //title:[],
+    open: false
     };
 
     onOpenModal = () => {

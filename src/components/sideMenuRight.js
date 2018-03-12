@@ -6,6 +6,7 @@ const style = {
     background: 'black',
     display: 'inline-block',
     maxWidth: '300px',
+    minWidth: '240px',
     margin: '0 0 1vh 0',
     float: 'right',
     height: 'auto',
@@ -29,7 +30,7 @@ class sidemenuRight extends Component {
 
     itemClicked = (value) =>{
         PubSub.publish('sideMenu.right', {selection: value});
-    }
+    };
 
     render() {
         return(
