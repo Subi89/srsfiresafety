@@ -31,7 +31,7 @@ const items = [
     {label: 'Fire Hydrant Drawing', value: 'fireHydrantDrawing', icon: 'flaticon-sketchbook'},
     {label: 'Fire Training Certification', value: 'fireTrainingCertification', icon: 'flaticon-diploma'},
     {label: 'Live Fire Extinguisher Demo', value: 'liveFireExtinguisherDemo', icon: 'flaticon-announcement'},
-    {divider: true, label: 'Other', value: 'other'},
+    {divider: true, label: 'Information', value: 'information'},
     {label: 'About Us', value: 'aboutUs', icon: 'flaticon-about-successful-man'},
     {label: 'Contact Us', value: 'contactUs', icon: 'flaticon-phone-book'}
 ];
@@ -46,7 +46,7 @@ class sideMenuLeft extends Component {
         return(
             <div style={style}>
                     <SideMenu items={items} shouldTriggerClickOnParents={true} onMenuItemClick={this.itemClicked} renderMenuItemContent={(item) =>
-                     (<span><i class={'fa ' + item.icon}></i><strong style={{color: "white"}}>  {item.label}</strong></span>)}/>
+                     (<span><i class={'fa ' + item.icon}></i><strong style={{color: "white", fontWeight: "300", fontFamily: '"Lucida Console", Courier, monospace;'}}>  {item.label}</strong></span>)}/>
             </div>
         );
     }

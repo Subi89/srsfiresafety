@@ -5,11 +5,10 @@ import GoogleMap from './googleMap';
 const footerStyle = {
     margin: '10px',
     padding: '20px',
-    width: '98%',
+    width: '100%',
     position: 'relative',
-    borderRadius: '15px',
     height: '400px',
-    background: '#222D32',
+    background: '#E0E0EF',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
