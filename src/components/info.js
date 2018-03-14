@@ -3,6 +3,7 @@ import Logo from '../images/srsEnterprisesLogo.png';
 
 const infoStyle = {
     width: '25vw',
+    minWidth: '500px',
     display: 'block',
     clear: 'both',
     textAlign: 'center',
@@ -15,6 +16,7 @@ const infoStyle = {
 
 const logoStyle = {
     width: '25vw',
+    minWidth: '500px',
     display: 'block',
     height: '80px',
     backgroundImage: `url(${Logo})`,

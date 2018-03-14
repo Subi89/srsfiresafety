@@ -3,6 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 const mapStyle = {
     width: '50%',
+    miinWidth: '500px',
     height: '350px',
     display: 'inline-block',
     itemAlign: 'right',
