@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 
 import SideMenuLeft from './components/sideMenuLeft';
-import SideMenuRight from './components/sideMenuRight';
 import Carousel from './components/carousel';
 import DisplayItemList from './components/displayItemList';
 import Footer from './components/footer';
@@ -15,7 +14,6 @@ class App extends Component {
         <Carousel />
         <SideMenuLeft />
         <DisplayItemList />
-        <SideMenuRight />
         <Footer />
       </div>
     );

@@ -22,15 +22,16 @@ const style = {
     background: '#222d32',
 //    background: '#E7AD36',
     display: 'inline-block',
-    width: 'calc(100% - 560px)',
+    width: 'calc(100% - 330px)',
     margin: '0 0 0 10px',
-    minHeight: '49vh',
+    minHeight: '84vh',
     borderRadius: '15px',
     position: 'relative',
     verticalAlign: 'top',
     overflow: 'auto',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center'
+    backgroundPosition: 'center center',
+    marginTop: '10px'
 };
 
 
