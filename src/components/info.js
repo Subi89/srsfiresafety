@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Logo from './logo';
 
 const infoStyle = {
-    width: '25vw',
-    minWidth: '500px',
+    width: '30vw',
+    minWidth: '300px',
     display: 'block',
     clear: 'both',
     textAlign: 'center',

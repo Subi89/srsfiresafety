@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 
 const callbackStyle = {
-    width: '297px',
+    width: '30vw',
+    minWidth: '300px',
     float: 'left',
     marginRight: '21px',
     background: '#222D32',
@@ -31,8 +32,12 @@ const buttonStyle = {
 class callback extends Component {
 
     onSubmitClick = () => {
-        }
-
+        fetch('/send?subject=callback - ' + this._name.value + ' - ' + this._mobile.value + ' - ' + this._email.value +
+            '&text=' + this._message.value)
+            .then(function(response) {
+                console.log(response.status);
+              });
+    }
 
     render(){
         return(
@@ -42,27 +47,27 @@ class callback extends Component {
             <form>
                 <table width="257" border="0" align="center" cellpadding="0" cellspacing="5">
                     <tbody><tr>
-                        <td width="100" class="form_text">Name</td>
+                        <td width="100" class="form_text">Name*</td>
                         <td width="10" class="form_text">:</td>
-                        <td><input name="Name" type="text" class="form_w" id="Name" required="" /></td>
+                        <td><input name="Name" type="text" class="form_w" id="Name" ref={input => this._name = input} /></td>
                     </tr>
 
                     <tr>
-                        <td class="form_text">Mobile</td>
+                        <td class="form_text">Mobile*</td>
                         <td class="form_text">:</td>
-                        <td><input type="text" name="Mobile" class="form_w" id="Mobile" required="" /></td>
+                        <td><input type="text" name="Mobile" class="form_w" id="Mobile" ref={input => this._mobile = input} /></td>
                     </tr>
 
                     <tr>
-                        <td class="form_text">Email</td>
+                        <td class="form_text">Email*</td>
                         <td class="form_text">:</td>
-                        <td><input type="text" name="Email" class="form_w" id="Email" required="" /></td>
+                        <td><input type="text" name="Email" class="form_w" id="Email" ref={input => this._email = input} /></td>
                     </tr>
 
                     <tr>
                         <td class="form_text">Query</td>
                         <td class="form_text">:</td>
-                        <td><textarea name="Message" class="form_w" id="Message" rows="5" cols="25" required=""></textarea></td>
+                        <td><textarea name="Message" class="form_w" id="Message" rows="5" cols="25" ref={input => this._message = input}></textarea></td>
                     </tr>
 
                     <tr>
