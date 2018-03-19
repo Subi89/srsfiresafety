@@ -7,7 +7,8 @@ const callbackStyle = {
     marginRight: '21px',
     background: '#222D32',
     borderRadius: '6px',
-    padding: '10px'
+    padding: '10px',
+    border: '2px solid white'
 };
 
 const buttonStyle = {
@@ -39,7 +40,7 @@ class callback extends Component {
             <h3>Request Callback</h3>
 
             <form>
-                <table width="257" border="0" align="center" cellpadding="0" cellspacing="0">
+                <table width="257" border="0" align="center" cellpadding="0" cellspacing="5">
                     <tbody><tr>
                         <td width="100" class="form_text">Name</td>
                         <td width="10" class="form_text">:</td>
@@ -59,15 +60,9 @@ class callback extends Component {
                     </tr>
 
                     <tr>
-                        <td class="form_text">Address</td>
-                        <td class="form_text">:</td>
-                        <td><input type="text" name="Address" class="form_w" id="Address" required="" /></td>
-                    </tr>
-
-                    <tr>
                         <td class="form_text">Query</td>
                         <td class="form_text">:</td>
-                        <td><textarea name="Message" class="form_w" id="Message" required=""></textarea></td>
+                        <td><textarea name="Message" class="form_w" id="Message" rows="5" cols="25" required=""></textarea></td>
                     </tr>
 
                     <tr>
