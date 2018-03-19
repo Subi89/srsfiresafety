@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './logo';
-import Menu, {SubMenu, MenuItem} from 'rc-menu';
+import Menu, {MenuItem} from 'rc-menu';
 import MenuCss from '../../node_modules/rc-menu/assets/index.css';
 
 const headerStyle = {

@@ -11,7 +11,7 @@ const infoStyle = {
     right: '1vw',
     height: '100px',
     color: 'white',
-    fontFamily: '"Lucida Console", Courier, monospace;'
+    fontFamily: '"Lucida Console", Courier, monospace'
 }
 
 const logoStyle = {

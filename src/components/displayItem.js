@@ -29,7 +29,7 @@ const buttonStyle = {
     fontSize: '14px',
     margin: '2px 2px',
     cursor: 'pointer',
-    webkitTransitionDuration: '0.4s', /* Safari */
+    WebkitTransitionDuration: '0.4s', /* Safari */
     transitionDuration: '0.4s',
 	boxShadowhadow: '0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',
 };
@@ -65,7 +65,7 @@ class displayItem extends Component {
 
     render(){
 		const { open } = this.state;
-        let { image, title } = this.props;
+        let { image, title} = this.props;
         let img_src = images(image);
         return(
             <div style={style}>
@@ -108,7 +108,7 @@ class displayItem extends Component {
                             <td></td>
                             <td style={{color:'red'}}><p>Options:</p>
 
-                            <form class="boxed">
+                            <form className="boxed">
                                 <input type="radio" id="one" name="weight" value="1KG"/>
                                 <label for="one">1KG</label>
 
