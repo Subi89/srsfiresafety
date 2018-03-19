@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Info from './info';
 import GoogleMap from './googleMap';
+import Callback from './callback';
 
 const footerStyle = {
     margin: '10px',
@@ -9,7 +10,7 @@ const footerStyle = {
     minWidth: '1000px',
     position: 'relative',
     height: '400px',
-    background: '#E0E0EF',
+    background: '#222D32',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -19,6 +20,7 @@ class footer extends Component {
     render(){
       return(
       <div style={footerStyle}>
+        <Callback />
         <Info />
         <GoogleMap />
       </div>

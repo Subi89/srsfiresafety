@@ -9,7 +9,7 @@ class carousel extends Component {
     render(){
         return(
             <div style={carouselStyle}>
-                <Carousel autoPlay={true} infiniteLoop={true} transitionTime={1000} showIndicators={false} showThumbs={false}>
+                <Carousel autoPlay={true} infiniteLoop={true} transitionTime={1000} showIndicators={true} showThumbs={false}>
                     <div>
                         <img src={require('../images/carousel/Extinguishers.jpg')} alt={""} />
                     </div>

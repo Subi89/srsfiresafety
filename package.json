@@ -12,7 +12,8 @@
     "react-sidemenu": "^0.0.14",
     "reactjs-carousel": "^1.16.1",
     "google-map-react": "^0.32.0",
-    "pubsub-js": "^1.6.0"
+    "pubsub-js": "^1.6.0",
+    "rc-menu": "^6.2.6"
   },
   "scripts": {
     "start": "react-scripts start",

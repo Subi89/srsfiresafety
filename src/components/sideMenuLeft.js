@@ -46,7 +46,7 @@ class sideMenuLeft extends Component {
         return(
             <div style={style}>
                     <SideMenu items={items} shouldTriggerClickOnParents={true} onMenuItemClick={this.itemClicked} renderMenuItemContent={(item) =>
-                     (<span><i class={'fa ' + item.icon}></i><strong style={{color: "white", fontWeight: "300", fontFamily: '"Lucida Console", Courier, monospace;'}}>  {item.label}</strong></span>)}/>
+                     (<span><i class={'fa ' + item.icon}></i><strong style={{color: "white", fontWeight: "300", fontSize: "15px", fontFamily: 'Halant, serif'}}>  {item.label}</strong></span>)}/>
             </div>
         );
     }
