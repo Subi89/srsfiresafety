@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './logo';
 import Menu, {MenuItem} from 'rc-menu';
+import PubSub from 'pubsub-js';
 import MenuCss from '../../node_modules/rc-menu/assets/index.css';
 
 const headerStyle = {
@@ -38,6 +39,10 @@ const menuItemStyle = {
 }
 
 class header extends Component {
+    menuItemClicked = (value) =>{
+        PubSub.publish('mainMenu', {selection: value.key});
+    };
+
     render(){
       return(
         <div style={headerStyle}>
@@ -45,7 +50,7 @@ class header extends Component {
                 <Logo />
                 <h1 style={headingStyle}> SRS Enterprises </h1>
             </div>
-            <Menu style={menuStyle} mode="horizontal" defaultActiveFirst={true}>
+            <Menu style={menuStyle} mode="horizontal" defaultActiveFirst={true} onClick={this.menuItemClicked}>
               <MenuItem style={menuItemStyle} key='home'>Home</MenuItem>
               <MenuItem style={menuItemStyle} key='products'>Products</MenuItem>
               <MenuItem style={menuItemStyle} key='services'>Services</MenuItem>

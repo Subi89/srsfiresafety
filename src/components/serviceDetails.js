@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MapComponents from 'react-map-components';
-import DisplayItem from './displayItem';
 import PubSub from 'pubsub-js';
 
 const attributeList = {
@@ -34,31 +33,29 @@ const style = {
     marginTop: '10px'
 };
 
-
 class displayItemList extends Component {
     constructor(props) {
         super(props);
-        this.state = {itemList: attributeList["fireExtinguishers"]};
+//        this.state = {itemList: attributeList["fireExtinguishers"]};
     }
 
     sideMenuSelectionUpdate = (msg, data) => {
-//        console.log("Got something on the subscription : ", msg, data)
         if(attributeList[data.selection])
             this.setState({itemList: attributeList[data.selection]});
     }
 
     componentDidMount() {
-        this.setState({itemList: attributeList["fireExtinguishers"]});
+//        this.setState({itemList: attributeList["fireExtinguishers"]});
         this.token = PubSub.subscribe('sideMenu', this.sideMenuSelectionUpdate);
     }
 
     render(){
         return (
             <div className = "displayItemList" style = {style}>
-                <MapComponents component={DisplayItem} for={this.state.itemList} />
+
             </div>
         );
     }
 }
-
+//<MapComponents component={DisplayItem} for={this.state.itemList} />
 export default displayItemList;

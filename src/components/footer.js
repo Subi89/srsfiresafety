@@ -6,7 +6,7 @@ import Callback from './callback';
 const footerStyle = {
     margin: '10px',
     padding: '20px',
-    width: '100%',
+    width: '99%',
     minWidth: '1000px',
     position: 'relative',
     height: '400px',

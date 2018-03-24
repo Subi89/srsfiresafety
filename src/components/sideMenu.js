@@ -15,8 +15,9 @@ const style = {
     marginTop: '10px'
 };
 
-const items = [
-    {divider: true, label: 'Our Products', value: 'main-nav'},
+const items = {
+    products: [
+    {divider: true, label: 'Our Products', value: 'products'},
     {label: 'Fire Extinguishers', value: 'fireExtinguishers', icon: 'flaticon-fire-extinguisher-1'},
     {label: 'Fire Hydrant System', value: 'fireHydrantSystem', icon: 'flaticon-hydrant'},
     {label: 'Smoke And Fire Detection System', value: 'smokeAndFireDetectionSystem', icon: 'flaticon-fire-alarm'},
@@ -24,7 +25,12 @@ const items = [
     {label: 'Safety Suits', value: 'safetySuits', icon: 'flaticon-diving-suit'},
     {label: 'Personal Protective Equipment', value: 'personalProtetiveEquipment', icon: 'flaticon-construction'},
     {label: 'Suppression System', value: 'suppressionSystem', icon: 'flaticon-fire-extinguisher'},
-    {divider: true, label: 'Our Services', value: 'other'},
+    {divider: true, label: 'Information', value: 'information'},
+    {label: 'About Us', value: 'aboutUs', icon: 'flaticon-about-successful-man'},
+    {label: 'Contact Us', value: 'contactUs', icon: 'flaticon-phone-book'}
+    ],
+    services: [
+    {divider: true, label: 'Our Services', value: 'services'},
     {label: 'Fire safety Consultant', value: 'fireSafetyConsultant', icon: 'flaticon-professor-consultation'},
     {label: 'Fire NOC Approval', value: 'fireNocApproval', icon: 'flaticon-verified-text-paper'},
     {label: 'Fire License Approval', value: 'fireLicenseApproval', icon: 'flaticon-id-card'},
@@ -34,22 +40,37 @@ const items = [
     {divider: true, label: 'Information', value: 'information'},
     {label: 'About Us', value: 'aboutUs', icon: 'flaticon-about-successful-man'},
     {label: 'Contact Us', value: 'contactUs', icon: 'flaticon-phone-book'}
-];
+    ]
+};
 
-class sideMenuLeft extends Component {
+class sideMenu extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {menuList: items[props.menuSelection]};
+    }
 
     itemClicked = (value) =>{
         PubSub.publish('sideMenu.left', {selection: value});
     };
 
+    mainMenuSelectionUpdate = (msg, data) => {
+        if(data.selection)
+            this.setState({menuList: items[data.selection]});
+    }
+
+    componentWillMount() {
+        this.token = PubSub.subscribe('mainMenu', this.mainMenuSelectionUpdate);
+    }
+
     render() {
         return(
             <div style={style}>
-                    <SideMenu items={items} shouldTriggerClickOnParents={true} onMenuItemClick={this.itemClicked} renderMenuItemContent={(item) =>
+                    <SideMenu items={this.state.menuList} shouldTriggerClickOnParents={true} onMenuItemClick={this.itemClicked} renderMenuItemContent={(item) =>
                      (<span><i className={'fa ' + item.icon}></i><strong style={{color: "white", fontWeight: "300", fontSize: "15px", fontFamily: '"Slabo 40px", serif'}}>  {item.label}</strong></span>)}/>
             </div>
         );
     }
 }
 
-export default sideMenuLeft;
+export default sideMenu;

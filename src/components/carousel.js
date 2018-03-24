@@ -3,7 +3,8 @@ import carouselStyles from '../../node_modules/react-responsive-carousel/lib/sty
 var Carousel = require('react-responsive-carousel').Carousel;
 
 const carouselStyle = {
-    minWidth: '1000px'
+    minWidth: '1000px',
+    marginTop: '10px'
 }
 class carousel extends Component {
     render(){
