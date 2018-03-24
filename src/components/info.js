@@ -11,7 +11,7 @@ const infoStyle = {
     right: '1vw',
     height: '100px',
     color: 'white',
-    fontFamily: '"Lucida Console", Courier, monospace'
+    fontFamily: '"Slabo 40px", serif'
 }
 
 const logoStyle = {
@@ -32,6 +32,7 @@ class info extends Component {
                 <Logo />
             </div>
             <div style={infoStyle}>
+                <h2>SRS Enterprises</h2>
                 <p>70A/1, K.K.NAGAR,</p>
                 <p>Kavundampalayam</p>
                 <p>Coimbatore - 641030</p>

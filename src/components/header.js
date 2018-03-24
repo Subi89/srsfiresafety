@@ -16,7 +16,7 @@ const headerStyle = {
 const headingStyle = {
     display:'inline-block',
     verticalAlign: 'top',
-    margin: '10px 0 0 50px',
+    margin: '10px 0 0 20px',
     color: 'white',
     fontSize: '48px',
     height: 'auto',
@@ -58,5 +58,3 @@ class header extends Component {
 }
 
 export default header;
-
-//

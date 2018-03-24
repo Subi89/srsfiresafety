@@ -18,6 +18,7 @@ class App extends Component {
       <div className="App">
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Alike|Halant|Squada+One" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"/>
         <Header />
         <Carousel />
         <div style={bodyStyle}>
