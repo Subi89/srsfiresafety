@@ -1,2 +1,2 @@
 #!/bin/bash
-npm ustart
+npm run ustart
