@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {SideMenu} from 'react-sidemenu';
-import sideMenuStyles from '../../node_modules/react-sidemenu/dist/react-sidemenu.css';
+import '../../node_modules/react-sidemenu/dist/react-sidemenu.css';
 import PubSub from 'pubsub-js';
-import flatIconStyle from '../css/flaticon.css';
+import '../css/flaticon.css';
 
 const style = {
 //    background: 'black',

@@ -40,6 +40,9 @@ class App extends Component {
             case 'projects':
                 this.setState({showCarousel: false, showCatalog: false, showItemList: false, showServiceDetail: false });
                 break;
+            default:
+                this.setState({showCarousel: true, showCatalog: false });
+                break;
             }
     }
 

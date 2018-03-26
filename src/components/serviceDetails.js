@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MapComponents from 'react-map-components';
 import PubSub from 'pubsub-js';
 
 const attributeList = {
@@ -33,7 +32,7 @@ const style = {
     marginTop: '10px'
 };
 
-class displayItemList extends Component {
+class serviceDetails extends Component {
     constructor(props) {
         super(props);
 //        this.state = {itemList: attributeList["fireExtinguishers"]};
@@ -51,11 +50,10 @@ class displayItemList extends Component {
 
     render(){
         return (
-            <div className = "displayItemList" style = {style}>
+            <div style = {style}>
 
             </div>
         );
     }
 }
-//<MapComponents component={DisplayItem} for={this.state.itemList} />
-export default displayItemList;
+export default serviceDetails;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Logo from './logo';
 import Menu, {MenuItem} from 'rc-menu';
 import PubSub from 'pubsub-js';
-import MenuCss from '../../node_modules/rc-menu/assets/index.css';
+import '../../node_modules/rc-menu/assets/index.css';
 
 const headerStyle = {
     width: '100%',
