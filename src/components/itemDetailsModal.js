@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-responsive-modal';
+import PubSub from 'pubsub-js';
 import '../../node_modules/react-responsive-modal/lib/react-responsive-modal.css';
 
 let images = require.context('../images', true);
@@ -28,17 +29,13 @@ class itemDetailsModal extends Component {
         this.state= {open: props.modalOpen};
     }
 
-//    state = {
-//    open: true
-//    };
-
     onOpenModal = () => {
         this.setState({ open: true });
     };
 
     onCloseModal = () => {
         this.setState({ open: false });
-        this.un
+        PubSub.publish('modalClose', {open: false});
     };
 
     render(){

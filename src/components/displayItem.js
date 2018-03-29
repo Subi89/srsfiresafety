@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ItemDetailsModal from './itemDetailsModal';
+import PubSub from 'pubsub-js';
 
 const style = {
     background: 'linear-gradient(lavender, lightgrey)',
@@ -54,8 +55,15 @@ class displayItem extends Component {
         this.state = {modalOpen: false};
     }
 
+    componentDidMount() {
+        this.token = PubSub.subscribe('modalClose', this.modalClosed);
+    }
+
+    modalClosed = (msg, data) => {
+        this.setState({modalOpen: data.open});
+    }
+
     openModal = () => {
-//        this.setState({modalOpen: false});
         this.setState({modalOpen: true});
     }
     render(){
