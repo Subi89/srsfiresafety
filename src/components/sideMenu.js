@@ -23,7 +23,7 @@ const items = {
     {label: 'Smoke And Fire Detection System', value: 'smokeAndFireDetectionSystem', icon: 'flaticon-fire-alarm'},
     {label: 'Escape Signs And Lighting', value: 'escapeSignsAndLighting', icon: 'flaticon-man-silhouette-running-escaping'},
     {label: 'Safety Suits', value: 'safetySuits', icon: 'flaticon-diving-suit'},
-    {label: 'Personal Protective Equipment', value: 'personalProtetiveEquipment', icon: 'flaticon-construction'},
+    {label: 'Personal Protective Equipment', value: 'personalProtectiveEquipment', icon: 'flaticon-construction'},
     {label: 'Suppression System', value: 'suppressionSystem', icon: 'flaticon-fire-extinguisher'},
     {divider: true, label: 'Information', value: 'information'},
     {label: 'About Us', value: 'aboutUs', icon: 'flaticon-about-successful-man'},
